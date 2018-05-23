@@ -1,0 +1,213 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="keras" id="V`Qu,f}+PmF-CZE6WSfC" x="88" y="13">
+    <next>
+      <block type="mnist" id="R/G=];t:A:S52).-poR@">
+        <next>
+          <block type="dense" id="5LAC2;hGCRNdhxRMyjYA">
+            <next>
+              <block type="sequential" id="0W_yW`1|FIe,hMsCLL~!">
+                <next>
+                  <block type="sgd" id="mBN7~z+,Fs_gGDj:Tntz">
+                    <next>
+                      <block type="pyplot" id="dzMUJ{h`vDVj2upw_b0J">
+                        <next>
+                          <block type="numpy" id="b3@{-Kgh)FFDgoCaRtqi">
+                            <next>
+                              <block type="dropout" id="Nrl_)?H^_Jd4J~/*=*_x">
+                                <next>
+                                  <block type="rmsprop" id="Podh,YIXk8fy(E-n@q{(">
+                                    <next>
+                                      <block type="load_data" id="V1@_LW!bKY5K29opGezZ">
+                                        <next>
+                                          <block type="categorical" id="+Ua)%a=:G%?[-.wpMqFV">
+                                            <value name="NAME">
+                                              <block type="math_number" id="K2y-lM^4RAYFXY_=xu@y">
+                                                <field name="NUM">10</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="model_sequential" id="O/N=Aw2?jU@`B!!x]?S|">
+                                                <next>
+                                                  <block type="model_add" id="6Z)P`ZzU/fjqL=Ys|~-[">
+                                                    <value name="NAME">
+                                                      <block type="model_dense" id="DYP+w54Q%jbX_,`a]0nq">
+                                                        <value name="units">
+                                                          <block type="math_number" id="FK(-E+1ip.t]b:kjK(~m">
+                                                            <field name="NUM">512</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="activation">
+                                                          <block type="text" id="#^HH1P_iwjSrcq;},!Nt">
+                                                            <field name="TEXT">relu</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="dim_x">
+                                                          <block type="math_number" id="iYhtDm]1jyOm4vzctK]d">
+                                                            <field name="NUM">784</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="dim_y">
+                                                          <block type="math_number" id="Cfr7p^{VsTqm#3+7NPg2">
+                                                            <field name="NUM">0</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="model_add" id="K@a$(`V]/{mi#*2E=ShK">
+                                                        <value name="NAME">
+                                                          <block type="model_dropout" id="cE@[UaeOih8@uV_l1|=D">
+                                                            <value name="NAME">
+                                                              <block type="math_number" id="z%?HIghlW}l3KR:hNE+(">
+                                                                <field name="NUM">0.2</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="model_add" id=")v/X?f83Y+HAyws1Mx/u">
+                                                            <value name="NAME">
+                                                              <block type="model_dense" id="y:uN`(:Vv.Qi@I(%wfsK">
+                                                                <value name="units">
+                                                                  <block type="math_number" id="p-|jx5]jmvgJdvs7ebW2">
+                                                                    <field name="NUM">512</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="activation">
+                                                                  <block type="text" id="`xjv_+UZX$l9m${W!ws3">
+                                                                    <field name="TEXT">relu</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="dim_x">
+                                                                  <block type="math_number" id="iDFr.M;2N9hnlGQ-LF%E">
+                                                                    <field name="NUM">0</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="dim_y">
+                                                                  <block type="math_number" id="Bm6OL!?ERO!}ow?iuBd2">
+                                                                    <field name="NUM">0</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="model_add" id=":R#]Aq3F%8,ihG!EL6?1">
+                                                                <value name="NAME">
+                                                                  <block type="model_dropout" id="0gbQ[Zs}Dm8h7g2*BfqV">
+                                                                    <value name="NAME">
+                                                                      <block type="math_number" id="6FWq._}jT;Ol?{(|S$W#">
+                                                                        <field name="NUM">0.2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="model_add" id="96YuNg-armgRFB@7Y9CC">
+                                                                    <value name="NAME">
+                                                                      <block type="model_dense" id="5GQvM+aF)n@63wx-*+d4">
+                                                                        <value name="units">
+                                                                          <block type="math_number" id="d:ttNMhZZo}[BM]ow?7I">
+                                                                            <field name="NUM">10</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="activation">
+                                                                          <block type="text" id="}XSG}eOrTGFwl)ry+7WG">
+                                                                            <field name="TEXT">softmax</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="dim_x">
+                                                                          <block type="math_number" id="=RdOxYn64f[kRMv^M*[.">
+                                                                            <field name="NUM">0</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="dim_y">
+                                                                          <block type="math_number" id="h-7t]W,U%1uJg9.ZS*rg">
+                                                                            <field name="NUM">0</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="model_summary" id="kGj7NB_xB*p9ZD1XeI?d">
+                                                                        <next>
+                                                                          <block type="model_compile" id="g^A,klj[3cqCjV.k-sQg">
+                                                                            <value name="loss">
+                                                                              <block type="text" id="]N@;as+8gWfu/isQ0!!2">
+                                                                                <field name="TEXT">categorical_crossentropy</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="optimizer">
+                                                                              <block type="text" id="gQ5z}WTpEmdBnP,fPm1B">
+                                                                                <field name="TEXT">RMSprop</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="metrics">
+                                                                              <block type="text" id="`Cbe!+(z@/lc=7fERaOw">
+                                                                                <field name="TEXT">accuracy</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="model_fit" id="tbuM|*d28GCE;O`I_oX|">
+                                                                                <value name="batch_size">
+                                                                                  <block type="math_number" id="O0X1lJP@vMkQN7XUXO:,">
+                                                                                    <field name="NUM">128</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="optimizer">
+                                                                                  <block type="math_number" id="mSj%hHhASS9*|RS7kn8n">
+                                                                                    <field name="NUM">20</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="metrics">
+                                                                                  <block type="math_number" id="`)}l#g=yA|GfsE-iSyq`">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="model_save" id="zg+u16W;:]M`4}9/@2Tf">
+                                                                                    <next>
+                                                                                      <block type="model_predict" id="7P0to}SC$Y{*1c*WF[it"></block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

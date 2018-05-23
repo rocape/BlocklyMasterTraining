@@ -1,2 +1,3 @@
-# BlocklyMasterTraining
-Blockly master training related documents
+# Blockly讲师讲习班
+欢迎大家报名参加今年的Blockly讲师讲习班，本次培训班涉及的案例代码如Blockly、
+Simple Blockly以及TF Blockly，您都可以在这里下载学习。
